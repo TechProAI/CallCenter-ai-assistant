@@ -1,0 +1,3 @@
+from app.services.supabase_service import get_supabase_service
+from app.services.openai_service import get_openai_service
+from app.services.audio_service import get_audio_service
