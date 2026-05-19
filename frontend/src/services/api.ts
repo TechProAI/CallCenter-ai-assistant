@@ -55,7 +55,8 @@ export async function deleteCall(callId: string): Promise<void> {
 }
 
 export function getExportPdfUrl(callId: string): string {
-  return `/api/calls/${callId}/export-pdf`;
+  const baseURL = import.meta.env.VITE_API_BASE_URL || '/api';
+  return `${baseURL}/calls/${callId}/export-pdf`;
 }
 
 // ── Dashboard ──
