@@ -2,7 +2,7 @@
 CallSense API — AI-powered Call Center Analysis Platform.
 Main FastAPI application entry point.
 """
-
+import os
 import logging
 from contextlib import asynccontextmanager
 from fastapi import FastAPI
